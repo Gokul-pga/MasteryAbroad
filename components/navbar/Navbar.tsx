@@ -233,7 +233,7 @@ export default function Navbar() {
                 <div
                   onMouseEnter={() => setCountryOpen(true)}
                   onMouseLeave={() => setCountryOpen(false)}
-                  className={`absolute top-full left-0 mt-3 w-64 bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 ${
+                  className={`absolute top-full left-0 mt-3 w-64 bg-white  max-h-96 overflow-y-auto rounded-2xl shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 ${
                     countryOpen
                       ? "opacity-100 visible translate-y-0"
                       : "opacity-0 invisible -translate-y-2"
@@ -298,7 +298,7 @@ export default function Navbar() {
                 <div
                   onMouseEnter={() => setCourseOpen(true)}
                   onMouseLeave={() => setCourseOpen(false)}
-                  className={`absolute top-full left-0 mt-3 w-72 bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 ${
+                  className={`absolute top-full left-0 mt-3 w-72 bg-white  max-h-96 overflow-y-auto rounded-2xl shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 ${
                     courseOpen
                       ? "opacity-100 visible translate-y-0"
                       : "opacity-0 invisible -translate-y-2"
