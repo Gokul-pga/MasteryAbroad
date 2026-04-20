@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@import "../styles/theme.css";
+
+/* Put custom classes inside layer */
+@layer utilities {
+  .primary-bg {
+    background-color: var(--primary);
+  }
+
+  .primary-text {
+    color: var(--primary);
+  }
+
+  .gold-bg {
+    background-color: var(--gold);
+  }
+
+  .gold-text {
+    color: var(--gold-medium);
+  }
+
+  .gold-gradient {
+    background: linear-gradient(
+      90deg,
+      var(--gold-light),
+      var(--gold-medium),
+      var(--gold-dark)
+    );
+  }
+
+  .btn-gold {
+    background-color: var(--gold-medium);
+    color: #030035;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+
+  .btn-gold:hover {
+    background-color: var(--gold-dark);
+    color: white;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 18s linear infinite;
+}
+
+@keyframes bgShift {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* .animate-bgShift {
+  background-image: linear-gradient(
+    120deg,
+    #020024 0%,
+    #030035 25%,
+    #0A0F2C 50%,
+    #030035 75%,
+    #020024 100%
+  );
+  background-size: 200% 100%;
+  animation: bgShift 10s linear infinite;
+} */
