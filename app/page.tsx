@@ -114,7 +114,7 @@ export default function Home() {
     },
     {
       name: "Pavini Chowdary",
-      university: "IT IS Ulster University",
+      university: "Ulster University",
       country: "Ireland",
       rating: 5,
       image: "/students/People.jpg",
